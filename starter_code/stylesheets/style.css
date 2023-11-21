@@ -8,3 +8,169 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+/* General formatting start */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #540B51;
+    margin:0px;
+}
+
+main, footer {
+    background-color: white;
+}
+
+#digitalHq {
+    background-color: #540B51;
+}
+
+#digitalHq h3{
+    color: white;
+    font-size: 30px;
+}
+
+#trustedCompanies {
+    background-color: #F3EAE2;
+    text-transform: uppercase;
+}
+
+#trustedCompanies img{
+    max-height: 30px;
+    width: auto;
+}
+
+.whiteButton {
+    background-color: white;
+    color: #540B51;
+    text-transform: uppercase; 
+    font-weight: bold;
+    padding: 20px 60px;
+    border:none;
+    border-radius: 5px;
+    width: auto;
+    height: 60px;
+    margin: 10px 0px;
+}
+
+#google {
+    background-color: #4285F4;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border:none;    
+    border-radius: 5px;
+    display: flex;
+    height: 60px;
+    width: auto;
+    margin: 10px 0px 50px 0px; 
+    align-items: center;
+    justify-content: center;
+}
+
+#google img{
+    background-color: white;
+    max-height: 50px;
+    border-radius: 5px;
+}
+
+#talkSales{
+    background-color:#540B51 ;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 60px;
+}
+
+header img:not(#google img){
+    max-height: 500px;
+    width: auto;
+    margin-left: 0px;
+}
+
+#slackLogo{
+    max-height: 35px;
+    width: auto;
+}
+
+li{
+    list-style: none;
+}
+
+header h1{
+    color: white;
+    font-size: 70px;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+header p{
+    color:white;
+    text-align: center;
+    font-size: 30px;
+}
+header span:first-child {
+    color:#ECB12F;
+}
+
+#survey h3{
+    color:#540B51;
+    font-size: 40px;
+}
+
+#survey p:first-of-type{
+    color:#000000;
+    font-size: 15px;
+}
+
+#survey ul p:first-child{
+    color:#540B51;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#survey ul p:not(:first-child){
+    color:#000000;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer li{
+    color:#000000;
+    font-weight: bold;
+}
+
+nav button{
+    all:unset;
+    padding: 10px;
+}
+/* general formatting end */
+
+/* Adaptive screen section start */
+/* mobile screens until 768px */
+@media (max-width:768px){
+    nav {display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+    align-items: center;
+    }
+
+    nav ul{
+    display: none;
+    }
+    
+    #buttonsContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+        padding: 0px 50px;
+    }
+       
+}
+
+
+
+
