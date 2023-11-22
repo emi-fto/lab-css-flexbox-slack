@@ -20,9 +20,9 @@
   <!-- NAVBAR -->
   <nav>
     <div>
-      <img id="slackLogo" src="./images/slack-logo.png" alt="Slack logo" />
+      <img src="./images/slack-logo.png" alt="Slack logo" class="slackLogo" />
 
-      <ul>
+      <ul class="navLinks">
         <li>
           <a href="#">Product</a>
         </li>
@@ -38,7 +38,7 @@
       </ul>
     </div>
 
-    <div>
+    <div class="btnCtn">
       <button>
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
@@ -64,26 +64,29 @@
     <div>
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p><span>Slack is free to try</span> for as long as you'd like.</p>
+      <p class="subTitle"><span>Slack is free to try</span> for as long as you'd like.</p>
 
-      <div id="buttonsContainer">
-        <button class="whiteButton">Sign up with email</button>
+      <div class="authCtn">
+        <button>Sign up with email</button>
 
-        <button id="google">
-          <img src="./images/logo-google.png" alt="Google logo" />
+        <button class="googleSignup">
+          <div class="googleLogoCtn">
+            <img src="./images/logo-google.png" alt="Google logo" />
+          </div>
           <span>Sign up with Google</span>
+          <span></span>
         </button>
       </div>
 
     </div>
 
-    <div>
+    <div class="heroImgCtn">
       <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
 
   <main>
-    <section id="trustedCompanies">
+    <section>
       <p>Trusted by companies all over the world</p>
 
       <div>
@@ -97,7 +100,7 @@
 
     </section>
 
-    <section id="survey">
+    <section>
       <h3>Teams large and small rely on Slack</h3>
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
@@ -129,11 +132,11 @@
       </ul>
     </section>
 
-    <section id="digitalHq">
+    <section>
       <h3>Welcome to your new digital HQ</h3>
 
-      <button class="whiteButton">Try for free</button>
-      <button id="talkSales">Talk to sales</button>
+      <button>Try for free</button>
+      <button>Talk to sales</button>
     </section>
 
   </main>

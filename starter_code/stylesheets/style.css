@@ -1,3 +1,51 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 /*
 background purple: #540B51
 background ivory: #F3EAE2
@@ -9,168 +57,121 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
-/* General formatting start */
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 body {
-    background-color: #540B51;
-    margin:0px;
+  font-family: sans-serif;
 }
 
-main, footer {
-    background-color: white;
+img {
+  max-width: calc(100vw - 10px);
 }
 
-#digitalHq {
-    background-color: #540B51;
+.navLinks {
+  display: none;
 }
 
-#digitalHq h3{
-    color: white;
-    font-size: 30px;
+nav {
+  display: flex;
+  background-color: #540B51;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem;
 }
 
-#trustedCompanies {
-    background-color: #F3EAE2;
-    text-transform: uppercase;
+.slackLogo {
+  width: 80px;
 }
 
-#trustedCompanies img{
-    max-height: 30px;
-    width: auto;
+.btnCtn {
+  display: flex;
+  gap: 20px;
 }
 
-.whiteButton {
-    background-color: white;
-    color: #540B51;
-    text-transform: uppercase; 
-    font-weight: bold;
-    padding: 20px 60px;
-    border:none;
-    border-radius: 5px;
-    width: auto;
-    height: 60px;
-    margin: 10px 0px;
+nav button {
+  all: unset;
+  height: 15px;
+  cursor: pointer;
 }
 
-#google {
-    background-color: #4285F4;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    border:none;    
-    border-radius: 5px;
-    display: flex;
-    height: 60px;
-    width: auto;
-    margin: 10px 0px 50px 0px; 
-    align-items: center;
-    justify-content: center;
+nav button img {
+  height: 15px;
 }
 
-#google img{
-    background-color: white;
-    max-height: 50px;
-    border-radius: 5px;
+header {
+  background-color: #540B51;
+  padding: .5rem;
+  overflow-x: hidden;
 }
 
-#talkSales{
-    background-color:#540B51 ;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 20px 60px;
+h1 {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  margin: 1.5rem 0;
 }
 
-header img:not(#google img){
-    max-height: 500px;
-    width: auto;
-    margin-left: 0px;
+.subTitle {
+  color: white;
+  text-align: center;
+  font-size: .8rem;
+  margin-bottom: 1.5rem;
 }
 
-#slackLogo{
-    max-height: 35px;
-    width: auto;
+.subTitle span {
+  color: #ECB12F;
+  font-weight: 600;
 }
 
-li{
-    list-style: none;
+.authCtn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-header h1{
-    color: white;
-    font-size: 70px;
-    padding: 0px 20px;
-    text-align: center;
+.authCtn button {
+  background-color: white;
+  color: #540B51;
+  font-weight: bold;
+  font-size: .6rem;
+  text-transform: uppercase;
+  padding: .5rem 0;
+  border-radius: 1px;
+  border: none;
 }
 
-header p{
-    color:white;
-    text-align: center;
-    font-size: 30px;
-}
-header span:first-child {
-    color:#ECB12F;
-}
-
-#survey h3{
-    color:#540B51;
-    font-size: 40px;
+button.googleSignup {
+  background-color: #4285F4;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
+  justify-content: space-between;
 }
 
-#survey p:first-of-type{
-    color:#000000;
-    font-size: 15px;
+.googleLogoCtn {
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#survey ul p:first-child{
-    color:#540B51;
-    font-size: 30px;
-    font-weight: bold;
+.googleSignup img {
+  height: 15px;
 }
 
-#survey ul p:not(:first-child){
-    color:#000000;
-    font-size: 15px;
-    font-weight: bold;
+.googleSignup span:last-child {
+  width: 25px;
 }
 
-footer li{
-    color:#000000;
-    font-weight: bold;
+.heroImgCtn {
+  margin-top: 2rem;
+  width: 125vw;
 }
 
-nav button{
-    all:unset;
-    padding: 10px;
+.heroImgCtn img {
+  max-width: unset;
+  width: 125vw;
 }
-/* general formatting end */
-
-/* Adaptive screen section start */
-/* mobile screens until 768px */
-@media (max-width:768px){
-    nav {display: flex;
-    justify-content: space-between;
-    margin: 10px 10px;
-    align-items: center;
-    }
-
-    nav ul{
-    display: none;
-    }
-    
-    #buttonsContainer{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: auto;
-        padding: 0px 50px;
-    }
-       
-}
-
-
-
-
