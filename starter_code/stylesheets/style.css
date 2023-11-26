@@ -175,3 +175,99 @@ button.googleSignup {
   max-width: unset;
   width: 125vw;
 }
+
+.mainP {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+main section:first-of-type {
+  padding: 2rem 0;
+  background-color: #F3EAE2;
+}
+
+#trustComp {
+  display:flex;
+  flex-direction: row;
+  background-color: #F3EAE2;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  padding: 1.2rem;
+}
+
+
+#airLogo {
+  max-width: 9rem;
+}
+
+#nasaLogo {
+  max-width: 5rem;
+}
+
+#uberLogo {
+  max-width: 6rem;
+}
+
+#targLogo {
+  max-width: 4rem;
+}
+
+#newTimLogo {
+  max-width: 20rem;
+}
+
+#spotLogo {
+  max-width: 10rem;
+}
+
+main section:nth-child(2) h3:first-of-type {
+  font-size: 1.2rem;
+  color: #540B51;
+  font-weight: 600;
+  text-align: center;
+  padding: 3rem 2rem 0;
+}
+h3 + p {
+  font-size: 0.8rem;
+  color: #000000;
+  font-weight: 550;
+  text-align: center;
+  padding: 2rem;
+}
+
+#provenResults ul li p:first-child {
+  font-size: 1.8rem;
+  color: #540B51;
+  font-weight: 600;
+  text-align: center;
+  padding: 3rem 2rem 0;
+}
+
+#provenResults ul li p:nth-child(2){
+  font-size: 0.8rem;
+  color: #000000;
+  font-weight: 550;
+  text-align: center;
+  margin: 0rem 10rem 0;
+}
+
+
+#hq {
+  display: flex;
+  flex-direction: column;
+  background-color: #540B51;
+  align-items: center;
+  padding: 3rem;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  align-content: space-between;
+  margin-top: 3rem;
+}
